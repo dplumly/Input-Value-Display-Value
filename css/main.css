@@ -39,6 +39,11 @@ Snowflake Texta
   transform: translate(-50%, -50%);
 }
 
+#displayURL {
+  margin: 40px auto;
+  display: table;
+}
+
 #buttonContainer {
   margin: 10px 0
 }
