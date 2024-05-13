@@ -6,23 +6,29 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title></title>
+  <title>Input Number</title>
 
   <!-- <css> -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/main.css">
-<title>Enter Number</title>
+  <title>Enter Number</title>
 </head>
+
 <body>
   <div id="enterNumberContainer">
     <label for="numberInput">Enter a number:</label>
+    <br>
     <input type="number" id="numberInput">
-    <button onclick="saveNumber()">Save</button>
+    <div id="buttonContainer">
+      <button id="saveButton">Save</button>
+      <button id="resetButton">Reset</button>
+    </div>
+   
+    <div id="currentNumber"></div>
   </div>
 
-
-  <script src="js/input.js"></script>
+  <script src="js/saveData.js"></script>
 </body>
 </html>

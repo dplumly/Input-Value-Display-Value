@@ -17,6 +17,21 @@ h6 { font-size: .75em; 	}
 p  { font-size: .75em; 	}
 
 
+/*=========================================================
+
+Snowflake Texta
+
+=========================================================*/
+@font-face {
+  font-family: 'SalesforceSans-Bold';
+  src: url('../fonts/Texta-Black.otf.eot');
+  src: url('../fonts/Texta-Black.otf.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Texta-Black.otf.woff') format('woff'),
+       url('../fonts/Texta-Black.otf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #displayArea, #enterNumberContainer {
   position: absolute;
   top: 50%;
@@ -24,4 +39,25 @@ p  { font-size: .75em; 	}
   transform: translate(-50%, -50%);
 }
 
+#buttonContainer {
+  margin: 10px 0
+}
+#saveButton, #resetButton {
+  padding: 5px 30px;
+}
 
+#numberInput {
+  padding: 5px;
+  width: 210px;
+}
+
+#currentNumber {
+  margin: 20px 0;
+}
+
+
+#displayArea {
+  color: #27B7EB;
+  font-size: 45px;
+  font-family: "Texta-Black", sans-serif;
+}
