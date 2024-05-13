@@ -6,7 +6,7 @@ body, html { height: 100%; }
 ul { list-style-type: none; }
 a { text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6, p { color: #5a4d72; }
+/* h1, h2, h3, h4, h5, h6, p { color: #5a4d72; }
 
 h1 { font-size: 2em;  	}
 h2 { font-size: 1.5em; 	}
@@ -14,7 +14,7 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; 	}
 h6 { font-size: .75em; 	}
-p  { font-size: .75em; 	}
+p  { font-size: .75em; 	} */
 
 
 /*=========================================================
@@ -23,11 +23,11 @@ Snowflake Texta
 
 =========================================================*/
 @font-face {
-  font-family: 'SalesforceSans-Bold';
-  src: url('../fonts/Texta-Black.otf.eot');
-  src: url('../fonts/Texta-Black.otf.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Texta-Black.otf.woff') format('woff'),
-       url('../fonts/Texta-Black.otf.ttf') format('truetype');
+  font-family: 'Texta-Black';
+  src: url('../fonts/Texta-Black.eot');
+  src: url('../fonts/Texta-Black.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Texta-Black.woff') format('woff'),
+       url('../fonts/Texta-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,6 +63,8 @@ Snowflake Texta
 
 #displayArea {
   color: #27B7EB;
-  font-size: 45px;
+  /* font-size: 45px; */
+  display: block ruby;
+  font-size: 5vw;
   font-family: "Texta-Black", sans-serif;
 }

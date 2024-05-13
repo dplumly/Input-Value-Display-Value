@@ -1,7 +1,5 @@
 console.log('Start save data script');
 
-// let number = document.getElementById("numberInput").value;
-
 let number = localStorage.getItem('savedNumber');
 
 window.addEventListener("load", () => {
@@ -28,3 +26,6 @@ document.getElementById('resetButton').addEventListener('click', () => {
     document.getElementById('numberInput').value = 0;
     document.getElementById("currentNumber").innerText = "Current number is: " + 0;
 });
+
+
+
