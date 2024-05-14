@@ -63,8 +63,9 @@ Snowflake Texta
 
 #displayArea {
   color: #27B7EB;
-  /* font-size: 45px; */
-  display: block ruby;
+  font-size: 45px;
   font-size: 5vw;
+  overflow: hidden;
+  white-space: nowrap;  
   font-family: "Texta-Black", sans-serif;
 }
