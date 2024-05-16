@@ -7,64 +7,139 @@ ul { list-style-type: none; }
 a { text-decoration: none; }
 
 /*=========================================================
-
 Snowflake Texta
-
 =========================================================*/
 @font-face {
-  font-family: 'Texta-Black';
-  src: url('../fonts/Texta-Black.eot');
-  src: url('../fonts/Texta-Black.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Texta-Black.woff') format('woff'),
-       url('../fonts/Texta-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Texta-Black';
+    src: url('../fonts/Texta-Black.eot');
+    src: url('../fonts/Texta-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Black.woff') format('woff'),
+        url('../fonts/Texta-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lato-Regular.';
+    src: url('../fonts/Lato-Regular.woff.eot');
+    src: url('../fonts/Lato-Regular.woff.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff.woff') format('woff'),
+        url('../fonts/Lato-Regular.woff.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*=========================================================
+Input data page
+=========================================================*/
 #inputValueContainer {
-  background-color: #27B7EB;
-  height: 100%;
-  width: 100%;
-  overflow:auto
+    background-color: #27B7EB;
+    height: 100%;
+    width: 100%;
+    overflow:auto
 }
 
 #displayArea, #enterNumberContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #displayURL {
-  margin: 40px auto;
-  display: table;
-  padding: 10px 20px;
-  color: black;
-  border: 2px black solid;
-  border-radius: 5px;
+	margin: 40px auto;
+    display: table;
+    padding: 12px 25px;
+    color: #27B7EB;
+	font-size: 20px;
+	font-family: "Lato-Regular", sans-serif;
+    border-radius: 25px;
+    background-color: white;
 }
 
 #buttonContainer {
-  margin: 10px 0
+	margin: 20px 0;
+}
+
+#label {
+	display: block;
+	color: white;
+	font-size: 20px;
+	font-family: "Lato-Regular", sans-serif;
+
+}​
+
+#buttonContainer {
+    margin: 10px 0
 }
 #saveButton, #resetButton {
-  padding: 5px 30px;
+	padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+	color: #27B7EB;
+	letter-spacing: 1px;
+    background-color: white;
 }
 
 #numberInput {
-  padding: 5px;
-  width: 210px;
+	padding: 10px;
+    width: 252px;
+    border-radius: 7px;
+    border: none;
 }
 
 #currentNumber {
-  margin: 20px 0;
+    margin: 20px 0;
+	color: white;
+	font-size: 20px;
+	font-family: "Lato-Regular", sans-serif;
+}
+
+/*=========================================================
+Display data page
+=========================================================*/
+
+#pillWrapper {
+    height: 400px;
+    width: 600px;
+    color: white;
+}
+
+#displayContainer {
+  position: relative;
+    height: 1080px;
+    width: 1920px;
+    background-color: #27B7EB;
+    height: 100%;
+    width: 100%;
+    overflow:auto
+}
+
+#pillWrapper {
+	position: relative;
+    height: 200px;
+    width: 1530px;
+    top: 150px;
+    margin: 0 auto;
+    display: table;
+    background-color: white;
+    border-radius: 100px;
 }
 
 #displayArea {
-  color: #27B7EB;
-  font-size: 45px;
-  font-size: 5vw;
-  overflow: hidden;
-  white-space: nowrap;  
-  font-family: "Texta-Black", sans-serif;
+    position: absolute;
+    font-size: 105px;
+    color: #27B7EB;
+    /* font-size: 5vw; */
+    overflow: hidden;
+    white-space: nowrap;  
+    font-family: "Texta-Black", sans-serif;
+}
+
+#mountains {
+	position: fixed;
+	bottom: 100px;
+	transform: scale(1.5);
+	left: 187px;
 }
