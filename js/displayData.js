@@ -11,7 +11,7 @@ setInterval(updateDisplay, 1000);
 // Function to update the display
 function updateDisplay() {
   let savedNumber = localStorage.getItem("savedNumber") || 0;
-  document.getElementById("displayArea").innerText = "Snowflake Save the Bears: " + savedNumber;
+  document.getElementById("displayArea").innerText = "Display Number: " + savedNumber;
   console.log('Updated value: ' + savedNumber);
 }
 
